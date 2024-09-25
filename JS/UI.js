@@ -37,7 +37,7 @@ for(let i = 0;i<=donateBtns.length;i++){
         const getBalance = document.getElementById("balance");
         const balanceNum = parseFloat(getBalance.innerText);
 
-        if(!isNaN(inputValueNum) && inputValueNum >= 0 && inputValueNum <= balanceNum){
+        if(!isNaN(input.value) && inputValueNum >= 0 && inputValueNum <= balanceNum){
             displayDonationAmount(i,inputValueNum);
             displayBalance(inputValueNum);
             
