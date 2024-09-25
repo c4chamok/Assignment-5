@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header class="flex flex-col items-center sticky top-0 z-20 bg-[#f9f7f3d4] backdrop-blur-lg">
+        <nav class="sm:w-[80%] w-[95%] pt-4 pb-1 ">
+            <ul class="flex justify-between items-center">
+                <li><a href="" class="px-3 py-2 bg-green-300 rounded-md">Blog</a></li>
+                <li class="inline-flex max-[639px]:flex-col items-center sm:gap-2"><img src="./assets/logo.png" alt=""><span>Donate Bangladesh</span></li>
+                <li class="inline-flex items-center gap-2"><img src="./assets/coin.png" alt=""><span id="balance">50000</span>BDT</li>
+            </ul>
+        </nav>   
+    </header>
+    
+    <main class="mt-7 flex flex-col items-center">
+        <section class="sm:w-[80%] w-[95%] flex flex-col items-center gap-2">
+                <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2"/>
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                    <p>Document Object Model or DOM is an Api which represents the structure of a html Document. It makes all the element in object type in tree shape to mimic the hierarchy of a webpage. With the help of DOM in javascript we can access and change an element and modify their property to create a dynamic webpage.</p>
+                    </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                    <p>We can select an element from the DOM by using </p>
+                    </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                    <p>hello</p>
+                    </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                    <p>hello</p>
+                    </div>
+              </div>
+        </section>
+    </main>
     
 </body>
 </html>
