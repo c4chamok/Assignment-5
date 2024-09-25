@@ -6,7 +6,28 @@
     <title>Assignment-5</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="relative">
+
+
+    <header class="flex flex-col items-center sticky top-0 z-20 bg-[#f9f7f3d4] backdrop-blur-lg">
+        <nav class="sm:w-[80%] w-[95%] pt-4 pb-1 ">
+            <ul class="flex justify-between items-center">
+                <li><a href="" class="px-3 py-2 bg-green-300 rounded-md">Blog</a></li>
+                <li class="inline-flex max-[639px]:flex-col items-center sm:gap-2"><img src="./assets/logo.png" alt=""><span>Donate Bangladesh</span></li>
+                <li class="inline-flex items-center gap-2"><img src="./assets/coin.png" alt=""><span id="balance">50000</span>BDT</li>
+            </ul>
+        </nav>  
+       
+    </header>
+
+    <section class="w-full space-y-3 sticky top-0 h-40 flex justify-center bg-white bg-opacity-70 backdrop-blur-lg">   
+        <div id="swap-btn" class=" flex gap-3 justify-center relative top-[110px] h-fit ">
+            <a id="donationtab-btn" class="px-3 py-2 cursor-pointer box-border inline-flex active:scale-95 hover:bg-green-400 bg-green-300 rounded-md font-semibold border-[#1111111a]">Donation</a>                
+            <a id="history-btn" class="px-3 py-2 cursor-pointer box-border inline-flex active:scale-95 hover:bg-green-400 hover:border-none border-[#1111111a]  border-[1px] rounded-md text-[#111111b3] font-semibold">History</a>   
+        </div>  
+    </section>
+
+
 
 
 
