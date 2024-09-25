@@ -30,4 +30,18 @@ function showModal(){
 
 
 
+function createHistory(amount,index){
+    const events = ['Flood Relief in Noakhali', 'famine-2024 at Feni', 'Aid for Injured in the Quota Movement']
+    const row = document.createElement("div");
+    let donateTime = new Date;
+    row.classList.add("p-5", "border-[#1111114d]", "border-[1px]", "rounded-md", "shadow-lg");
+    row.innerHTML = `
+        <h2 class="text-2xl font-bold">${amount} Taka is Donated for ${events[index]}, Bangladesh</h2>
+        <p class="text-[#111111b3]">Date: ${donateTime}</p>`;
+    document.getElementById("no-transection").innerText="";
+    historyTab.appendChild(row);
+}
+
+
+
 

@@ -40,6 +40,7 @@ for(let i = 0;i<=donateBtns.length;i++){
         if(!isNaN(input.value) && inputValueNum >= 0 && inputValueNum <= balanceNum){
             displayDonationAmount(i,inputValueNum);
             displayBalance(inputValueNum);
+            createHistory(inputValueNum,i);
             showModal();
         }
         else{
